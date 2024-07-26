@@ -97,6 +97,12 @@
     </li>
     <li>
         <s:url var="url" action="HelloWorld">
+            <s:param name="request_locale">fr</s:param>
+        </s:url>
+        <s:a href="%{url}">Français</s:a>
+    </li>
+    <li>
+        <s:url var="url" action="HelloWorld">
             <s:param name="request_locale">es</s:param>
         </s:url>
         <s:a href="%{url}">Espanol</s:a>
