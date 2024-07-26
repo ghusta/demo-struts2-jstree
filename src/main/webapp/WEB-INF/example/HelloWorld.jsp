@@ -64,12 +64,21 @@
         $.ajax({
             url: "${pageContext.request.contextPath}/example/JsonTest.action",
             type: 'POST',
+            beforeSend: function() {
+                $('#bloc-1').html("<div class='text-bg-light p-3'>...</div>");
+                $("#btn-test-1").hide();
+                $("#btn-test-1-loading").show();
+            },
             success: function(data) {
                 console.debug("Data : ", data);
                 if (data.message !== undefined) {
                     $('#bloc-1').html("<div class='text-bg-light p-3'>" + data.message + "</div>");
                 }
             }
+        })
+        .done(function( data ) {
+            $("#btn-test-1").show();
+            $("#btn-test-1-loading").hide();
         });
     }
     </script>
@@ -95,8 +104,11 @@
 </ul>
 
 <h3 class="mt-1">AJAX Test</h3>
-<button onclick="callAjax()" class="btn btn-outline-primary">Test</button>
-<div id="bloc-1"></div>
+<button id="btn-test-1" onclick="callAjax()" class="btn btn-outline-primary">Test</button>
+<button id="btn-test-1-loading" class="btn btn-primary" style="display: none;" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+  <span role="status">Loading...</span>
+</button><div id="bloc-1"></div>
 
 <h3 class="mt-1">Trees</h3>
 <h4>Ajax with JSON tree</h4>

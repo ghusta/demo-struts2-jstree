@@ -26,6 +26,7 @@ public class JsonTestAction extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
+        Thread.sleep(1200); // simulate a short delay
         Map<String, Object> map = new LinkedHashMap<>();
         map.put("message", "Hello World! This is a text string response from a Struts 2 Action.");
         byte[] valueAsBytes = objectMapper.writeValueAsBytes(map);
