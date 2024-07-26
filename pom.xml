@@ -154,10 +154,6 @@
                     </webApp>
                     <stopKey>CTRL+C</stopKey>
                     <stopPort>8999</stopPort>
-                    <scanIntervalSeconds>10</scanIntervalSeconds>
-                    <scanTargets>
-                        <scanTarget>src/main/webapp/WEB-INF/web.xml</scanTarget>
-                    </scanTargets>
                 </configuration>
             </plugin>
         </plugins>
