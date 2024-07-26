@@ -13,3 +13,9 @@ mvn jetty:run
 Open in browser with :
 
 * http://localhost:8080/demo-struts2-jstree/
+
+== Docker image
+
+A Docker image can be pulled from _ghcr.io_.
+
+See instructions at : https://github.com/ghusta/demo-struts2-jstree/pkgs/container/demo-struts2-jstree
