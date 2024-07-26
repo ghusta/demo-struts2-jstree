@@ -1,0 +1,15 @@
+= Demo Struts 2 - jstree
+:toc:
+
+== Usage
+
+Run Jetty server with :
+
+[source,bash]
+----
+mvn jetty:run
+----
+
+Open in browser with :
+
+* http://localhost:8080/demo-struts2-jstree/
