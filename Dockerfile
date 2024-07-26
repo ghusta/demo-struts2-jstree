@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN mvn package -DskipTests
+RUN mvn --no-transfer-progress package -DskipTests
 
 FROM tomcat:9.0-jre17
 
