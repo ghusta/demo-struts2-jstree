@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/webjars/jstree/3.3.16/themes/default/style.min.css">
 
-    <script>
+    <s:script>
     $( document ).ready(function() {
         let jqVersion = $().jquery;
         console.log( "JQuery version loaded : " + jqVersion );
@@ -81,7 +81,7 @@
             $("#btn-test-1-loading").hide();
         });
     }
-    </script>
+    </s:script>
 </head>
 <body>
 <div class="container">
