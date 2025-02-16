@@ -12,7 +12,15 @@ public class JsonTreeAction extends ActionSupport {
 
     private InputStream inputStream;
 
+    @SuppressWarnings("unused")
+    private String id;
+
+    @SuppressWarnings("unused")
     private final ObjectMapper objectMapper;
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public JsonTreeAction() {
         objectMapper = JsonMapper.builder()
