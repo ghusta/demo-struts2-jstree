@@ -3,6 +3,7 @@ package org.example.example;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import org.apache.struts2.ActionSupport;
+import org.apache.struts2.interceptor.parameter.StrutsParameter;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -18,6 +19,7 @@ public class JsonTreeAction extends ActionSupport {
     @SuppressWarnings("unused")
     private final ObjectMapper objectMapper;
 
+    @StrutsParameter()
     public void setId(String id) {
         this.id = id;
     }
