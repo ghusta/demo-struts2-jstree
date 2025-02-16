@@ -2,7 +2,7 @@ package org.example.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
-import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.ActionSupport;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
